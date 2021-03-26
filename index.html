@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		.nexts:hover{
+			opacity:0.2;
+		}
+		@keyframes example {
+             0%   {left:0px; top:0px;}
+             25%  { left:0px; top:20px;}
+             50%  {left:0px; top:0px;}
+             75%  { left:0px; bottom:20px;}
+            100% {left:0px; top:0px;}
+        }
+
+        .sidenav a {
+
+            position: relative;
+            animation-name: example;
+            animation-duration: 1s;
+            animation-iteration-count:infinite;
+        }
+	</style>
+	<title>Login Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/Screenshot 2021-03-26 at 9.17.37 AM.png"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/qrcode.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	var qrcode=new QRCode(document.getElementById('qrResult'),{
+		width:100,
+		height:100
+	});
+
+
+	qrcode.makeCode(message.value);
+}
+
+</script>
+
+</div>
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+					<div class="container-login100-form-btn">
+						<div class="sidenav">
+							<a href="#about">About</a>
+							
+						  </div>
+						<form>
+				<input type="file" id="file" name="file" style="padding-left:500px,color:white" >
+
+<p style="padding-left:500px,color:white;" >Qr Content: <span id="content"></span></p>
+
+<script type="text/javascript" src="js/qrReader.js"></script>
+</form>
+<button onclick="funcx()" class="nexts"  style="display:block; background-color:rgb(201, 156, 243); border-radius:5px; font-size:15px;">Next Page</button>
+	
+					</div>
+<div style="background-color:white" ></div>
+			
+			</div>
+				</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<script>
+	function funcx()
+	{
+	var info_college=document.getElementById("content").innerHTML;
+	var n = info_college.includes("Anna University");
+	if(n)
+	{
+		window.alert("Approved! Continue to Telegram! ");
+		window.location.href = "https://t.me/AUBookedBot";
+	}
+	else
+	{
+		window.alert("Sorry, Not allowed! ");
+	}
+	}
+</script>
+</body>
+</html>
