@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		.nexts:hover{
+			opacity:0.2;
+		}
+        .wrap-login100 h2{
+            padding-left:20px;
+            color:white;
+            text-shadow:2px 2px salmon;
+        }
+        .wrap-login100 h4{
+            color:white;
+            text-shadow:2px 2px grey;
+            padding-top:25px;
+            padding-left:25px;
+        }
+		@keyframes example {
+             0%   {left:0px; top:0px;}
+             25%  { left:0px; top:20px;}
+             50%  {left:0px; top:0px;}
+             75%  { left:0px; bottom:20px;}
+            100% {left:0px; top:0px;}
+        }
+
+        .wrap-login100 h2 {
+
+            position: relative;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count:infinite;
+        }
+
+	</style>
+	<title>Welcome Page</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="images/icons/Screenshot 2021-03-26 at 9.17.37 AM.png"/>
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/qrcode.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+	var qrcode=new QRCode(document.getElementById('qrResult'),{
+		width:100,
+		height:100
+	});
+
+
+	qrcode.makeCode(message.value);
+}
+
+</script>
+
+</div>
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<h2>WHAT IS BOOK-ED?</h2>
+				<br>
+				<h4>This is an application to help students buy and sell books. It is a safe space that is specific for Anna University students. Our AuBookedBot will help you navigate throughout our application right from the comfort of your phones! 
+				With the click of a button, have the book you need Book-Ed! Get the details of the owner of the book for further communication and negotiation!
+				Remember to be respectful to your fellow college mates! </h4>
+<a href="index.html"><button class="nexts"  style=" background-color:rgb(201, 156, 243); border-radius:5px; font-size:15px; margin-left:150px; margin-top:25px;">Go Back! </button></a>
+	
+					</div>
+<div style="background-color:white" ></div>
+			
+			</div>
+				</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+</body>
+</html>
